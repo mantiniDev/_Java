@@ -117,14 +117,14 @@ public class Main {
     List<String> info = new ArrayList<>();
 
     try (Scanner sc = new Scanner(System.in)) {
-      System.out.println("\n1. Insert the path of the file to be analyzed:");
+      System.out.println("\n1. Insira o caminho do arquivo a ser analisado:");
       info.add(sc.next());
 
-      System.out.println("\n2. Insert the path of the file to be generated:");
+      System.out.println("\n2. Insira o caminho do arquivo a ser gerado:");
       info.add(sc.next());
 
       do {
-        System.out.println("\n3. Insert the desired quantity of items (between 1 and 3):");
+        System.out.println("\n3. Insira as quantidades desejadas de itens: (Entre 1 e 3):");
         info.add(2, sc.next());
       } while (Integer.parseInt(info.get(2)) < 1 || Integer.parseInt(info.get(2)) > 3);
     } catch (Exception e) {
