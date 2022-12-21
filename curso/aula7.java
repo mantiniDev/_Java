@@ -15,7 +15,7 @@ public class aula7 {
         //System.arraycopy(num, 0, num1, 0, tam); /*copia de outro array*/
         //System.out.printf("Arrays são iguais: %s", Arrays.equals(num, num1) ? "Sim" : "não"); /*comparação*/
 
-        //Arrays.sort(num);
+        Arrays.sort(num);
         pos = Arrays.binarySearch(num, p);
         System.out.printf("O Elemento %d esta no array? %s",p,pos > 0 ? "Sim" : "não");
 
